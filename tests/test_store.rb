@@ -1,10 +1,13 @@
 require 'minitest/autorun'
-require './app'
+require './store'
 
 class TestApp < Minitest::Test
   def test_application
-    application = App.new
-    assert_equal "Invalid option! Please try again.", application.select_department(8), "Select Department method failed"           
+    store = Store.new("Grocery",-1)
+    assert store.aisle > 0, "Incorrect aisle number"           
+  end
+  def test_aisle
+    store = Store.new("Clothing",-2)
+    assert_equal store.valid_aisle?, true, "aisle not valid"
   end
 end
-

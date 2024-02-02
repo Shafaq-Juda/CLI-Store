@@ -1,5 +1,3 @@
-# ruby-cli-template
-
-Use this repository as a template for your Ruby CLI (command line interface) project.
+CLI Store. This app will help you find the correct aisle number for your desired department of the store.
 
 - Ruby version: `3.2.1`
